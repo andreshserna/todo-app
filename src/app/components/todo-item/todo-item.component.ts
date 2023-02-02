@@ -16,5 +16,10 @@ export class TodoItemComponent {
   updateToggle() {
     this.editTodo = !this.editTodo;
   }
+  updateTodo() {
 
+  }
+  deleteTodo() {
+
+  }
 }
