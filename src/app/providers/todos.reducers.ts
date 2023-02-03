@@ -15,12 +15,14 @@ import { actions } from './todos.actions';
     return [...state];
   }),
   on(actions.deleteTodoAction,(state,todo)=> {
-    let todos = state.filter((t)=>t.id != todo.id);
+    let todos = state.filter((t)=> t.id != todo.id);
     return [...todos];
   }),
 );
 
+
+
 export const todosSelector = createSelector(createFeatureSelector("todos"),
-  (todos:TodoModel[]) => todos
+  (todos: TodoModel[]) => todos
 
 );

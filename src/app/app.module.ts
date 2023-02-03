@@ -21,7 +21,7 @@ import { todoReducer } from './providers/todos.reducers';
     AppRoutingModule,
     StoreModule.forRoot({
       "todos": todoReducer,
-    }, {})
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

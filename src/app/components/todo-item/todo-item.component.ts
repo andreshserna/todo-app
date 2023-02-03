@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { TodoModel } from '../../providers/todos.states';
 
 @Component({
   selector: 'app-todo-item',
   templateUrl: './todo-item.component.html',
   styleUrls: ['./todo-item.component.scss']
 })
-export class TodoItemComponent {
+export class TodoItemComponent implements OnInit {
+  @Input() todo?:TodoModel;
   editTodo: boolean =false;
 
   constructor() {  }
